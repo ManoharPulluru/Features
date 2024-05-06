@@ -20,13 +20,13 @@ const LocationTracker = () => {
     return () => {
       navigator.geolocation.clearWatch(watchId);
     };
-  }, []);
+  }, []); // Empty dependency array means effect runs only once
 
   return (
     <div>
       <h2>Location Tracker</h2>
       {error && <p>Error: {error}</p>}
-      {latitude && longitude && (
+      {latitude !== null && longitude !== null && (
         <p>
           Latitude: {latitude}, Longitude: {longitude}
         </p>
