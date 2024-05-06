@@ -1,0 +1,43 @@
+.SeatArrangementMain {
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.seatContainer {
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+}
+
+.row {
+    display: flex;
+}
+
+.seat {
+    width: 20px;
+    height: 20px;
+    background-color: gray;
+    font-size: 10px;
+    cursor: pointer;
+    color: white;
+    display: flex;
+    font-family: sans-serif;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 2px; /* Adjust this margin for the gap between seats */
+}
+
+.selected {
+    background-color: blue; /* Change to the desired color for selected seats */
+}
+
+.bookingBtn {
+    height: 30px;
+    width: 150px;
+    cursor: pointer;
+}

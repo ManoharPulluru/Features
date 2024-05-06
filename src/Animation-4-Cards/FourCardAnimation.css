@@ -1,0 +1,44 @@
+.FourCardAnimationMain {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(222, 206, 206);
+    position: relative; /* Add position relative to the main container */
+  }
+  
+  .card {
+    height: 30%;
+    width: 30%;
+    border: 2px solid green;
+    background-color: white;
+    border-radius: 20px;
+  }
+  
+  .card1 {
+    position: relative;
+  }
+  
+  .card2,
+  .card3,
+  .card4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: top 2s ease-in, left 2s ease-in; /* Add transition for smooth movement */
+  }
+  
+  /* Define final positions */
+  .card2.final {
+    top: 10%;
+    left: 5%;
+  }
+  
+  .card3.final {
+    top: 20%;
+    left: 10%;
+  }
+  
+  .card4.final {
+    top: 30%;
+    left: 15%;
+  }
+  

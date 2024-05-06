@@ -1,0 +1,36 @@
+
+  
+  select {
+    color: rgb(255, 255, 255);
+    /* background-color: white; */
+    width: 100%;
+    
+  }
+
+  option {
+    color: rgb(255, 255, 255);
+    background-color: navy;
+  }
+
+  select:focus {
+    outline: none;
+  }
+.availablityDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.selected {
+  border: 1px solid white;
+}
+
+.selectedAll {
+  border: 1px solid white;
+}
+
+.typeOfAct {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}

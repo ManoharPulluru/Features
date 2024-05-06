@@ -1,0 +1,46 @@
+{
+    "events": [
+      {
+        "event": "movie",
+        "rows": "14",
+        "columns": "10",
+        "hideSeats": [],
+        "bookedSeats": [
+          {
+            "seatNumber": "A1",
+            "status": "booked",
+            "price": "200",
+            "name": "Rajesh",
+            "email": "rajesh@gmail.com",
+            "phone": "1234567890",
+            "bookingId": "123456"
+          }
+        ]
+      }
+    ],
+    
+    "users": [
+      {
+        "name": "Rajesh",
+        "email": "rajesh@gmail.com",
+        "phone": "1234567890",
+        "bookedTickets" : [
+          {
+            "event": "movie",
+            "seatNumber": "A1",
+            "status": "booked",
+            "price": "200",
+            "bookingId": "123456"
+          },
+          {
+            "event": "movie",
+            "seatNumber": "A2",
+            "status": "booked",
+            "price": "200",
+            "bookingId": "123457"
+          }
+        ]
+      }
+    ]
+  }
+  

@@ -1,0 +1,44 @@
+.activityOptions {
+  max-height: 0;
+  overflow: hidden;
+  margin-top: 15px;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.activityOptions.visible {
+  margin-top: 15px;
+  max-height: 1000px;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.activity {
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.durationOptions {
+  max-height: 0;
+  overflow: hidden;
+  margin-top: 15px;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.durationOptions.visible {
+  margin-top: 15px;
+  max-height: 1000px;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.duration {
+  height: 40px;
+  width: 100%;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+
+

@@ -1,0 +1,115 @@
+.ItenaryComponentMain {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: white;
+    background-color: navy;
+    overflow: hidden;
+    /* padding: 10px; */
+}
+
+.eventBoxParent {
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    height: 100%;
+    width: 100%;
+    position: relative;
+    left: 5%;
+    top: 1%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    /* gap: 20px; */
+    /* margin-left: 10%; */
+    
+    /* padding-left: 20px; */
+}
+
+.eventBox {
+    width: 80%;
+    /* border: 1px solid yellow; */
+    min-height: 30%;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding-left: 40px;
+}
+
+
+.linesDiv {
+    height: 100%;
+    width: 20%;
+    /* background-color: blue; */
+    position: absolute;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 35%;
+    justify-content: space-between;
+    top: 0;
+}
+
+.smallLine {
+    width: 25%;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+.smallLine1 {
+    width: 25%;
+    border-top: 1px transparent rgba(255, 255, 255, 0.5);
+}
+
+.bigLine {
+    width: 50%;
+    position: relative;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);;
+}
+
+
+.dateButtons {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    gap: 20px;
+    padding: 0 10px;
+}
+
+
+.dateButton {
+    height: 100%;
+    width: fit-content;
+    background: none;
+    border: none;
+    color: #888888;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.active{
+    border-bottom: 1px solid white;
+    font-weight: 500;
+    color: white;
+}
+
+.bigLineContent {
+    position: absolute;
+    left: 120%;
+    top: -12px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.70);
+    flex-direction: column;
+}
+
+.eventCardItenary {
+    height: 60%;
+    width: 80%;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 10%;
+    left: 25%;
+}

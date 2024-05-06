@@ -1,0 +1,10 @@
+{
+  "singleQuote": true,
+  "trailingComma": "all",
+  "jsxSingleQuote": true,
+  "arrowParens": "always",
+  "printWidth": 120,
+  "tabWidth": 2,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "useTabs": false
+}

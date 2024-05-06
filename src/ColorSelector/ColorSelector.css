@@ -1,0 +1,53 @@
+.ColorSelectorMain {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.clickedColor {
+  height: 50px;
+  width: 50px;
+  border: 1px solid black;
+  margin-top: 30px;
+}
+/* For WebKit (Chrome, Safari, etc.) */
+input[type="range"]::-webkit-slider-runnable-track {
+  background: linear-gradient(
+    to right,
+    rgb(0, 0, 0) 0%,
+    rgb(255, 0, 0) 16.666%,
+    rgb(255, 255, 0) 33.333%,
+    rgb(0, 255, 0) 50%,
+    rgb(0, 255, 255) 66.666%,
+    rgb(0, 0, 255) 83.333%,
+    rgb(255, 0, 255) 100%
+  );
+  border-radius: 20px;
+}
+
+
+/* General styling for the range input */
+input[type="range"] {
+  width: 200px;
+  height: 10px;
+  margin-top: 30px;
+}
+
+
+input[type=range] {
+    -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    height: 20px;
+    aspect-ratio: 1;
+    border-radius: 10px;
+    aspect-ratio: 1;
+    border: 2px solid white;
+}

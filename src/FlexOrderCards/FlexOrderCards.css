@@ -1,0 +1,21 @@
+/* FlexOrderCards.css */
+.FlexOrderorderCards {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5%;
+    overflow: scroll;
+  }
+
+  .cardFlex {
+    height: 100px;
+    aspect-ratio: 1;
+    border: 1px solid black;
+    order: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  

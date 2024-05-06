@@ -1,0 +1,17 @@
+.optionsInDetails {
+    visibility: hidden;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  }
+  
+  .optionsInDetails.visible {
+    visibility: visible;
+    max-height: 1000px;
+  }
+  
+
+  input:focus {
+    outline: none;
+    color: white;
+  }
