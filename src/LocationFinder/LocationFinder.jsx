@@ -11,6 +11,7 @@ const LocationTracker = () => {
         setLatitude(position.coords.latitude);
         setLongitude(position.coords.longitude);
         setError(null);
+        console.log("Location updated:", position.coords.latitude, position.coords.longitude);
       },
       (error) => {
         setError(error.message);
@@ -20,13 +21,13 @@ const LocationTracker = () => {
     return () => {
       navigator.geolocation.clearWatch(watchId);
     };
-  }, []); // Empty dependency array means effect runs only once
+  }, []);
 
   return (
     <div>
       <h2>Location Tracker</h2>
       {error && <p>Error: {error}</p>}
-      {latitude !== null && longitude !== null && (
+      {latitude && longitude && (
         <p>
           Latitude: {latitude}, Longitude: {longitude}
         </p>

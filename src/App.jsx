@@ -32,8 +32,8 @@ const App = () => {
       {/* <FlexOrderCards/> */}
       {/* <CloudinaryTest/> */}
       {/* <DashBoard /> */}
-      {/* <ItenaryComponent/> */}
-      <LocationTracker/>
+      <ItenaryComponent/>
+      {/* <LocationTracker/> */}
     </div>
   );
 };
