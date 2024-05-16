@@ -1,39 +1,106 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import MobileFit from './MobileFit';
 import SeatArrangement from './SeatArrangement/SeatArrangement';
 import ColorSelector from './ColorSelector/ColorSelector';
 import LiveCoCordinates from './LiveCo-ordinates/LiveCoCordinates';
-// import Guide from "./HearHereUpdated/GuideFlow/Guide";
 import Guide from './HH-GuideFlow/GuideFlow/Guide';
 import Itenary from './Itenary/Itenary';
 import FourCardAnimation from './Animation-4-Cards/FourCardAnimation';
 import Cameras from './Cameras/Cameras';
 import FlexOrderCards from './FlexOrderCards/FlexOrderCards';
 import DashBoard from './Dashboard-HH/DashBoard';
-import Bubbles from "./bubblesSelection/Bubbles";
+import Bubbles from './bubblesSelection/Bubbles';
 import CloudinaryTest from './CloudinaryTest/CloudinaryTest';
 import ItenaryComponent from './ItenaryComponent/ItenaryComponent';
+import BubbleD3 from './bubbleD3/BubbleD3';
 import LocationTracker from './LocationFinder/LocationFinder';
 
 const App = () => {
+  const [flag, setFlag] = useState(false);
   return (
     <div className='appMain'>
-      {/* <CircleAnimation /> */}
-      {/* <MobileFit/> */}
-      {/* <SeatArrangement/> */}
-      {/* <ColorSelector/> */}
-      {/* <LiveCoCordinates/> */}
-      {/* <Guide/> */}
-      {/* <Bubbles/> */}
-      {/* <Itenary/> */}
-      {/* <FourCardAnimation/> */}
-      {/* <Cameras/> */}
-      {/* <FlexOrderCards/> */}
-      {/* <CloudinaryTest/> */}
-      {/* <DashBoard /> */}
-      <ItenaryComponent/>
-      {/* <LocationTracker/> */}
+      <BrowserRouter>
+        <Routes>
+          <Route path='/mobile-fit' element={<MobileFit />} />
+          <Route path='/seat-arrangement' element={<SeatArrangement />} />
+          <Route path='/color-selector' element={<ColorSelector />} />
+          <Route path='/live-coordinates' element={<LiveCoCordinates />} />
+          <Route path='/guide' element={<Guide />} />
+          {/* <Route path='/' element={<Itenary />} /> */}
+          <Route path='/four-card-animation' element={<FourCardAnimation />} />
+          <Route path='/cameras' element={<Cameras />} />
+          <Route path='/flex-order-cards' element={<FlexOrderCards />} />
+          <Route path='/dashboard' element={<DashBoard />} />
+          <Route path='/bubbles' element={<Bubbles />} />
+          <Route path='/cloudinary-test' element={<CloudinaryTest />} />
+          <Route path='/' element={<ItenaryComponent />} />
+          <Route path='/bubble-d3' element={<BubbleD3 />} />
+          <Route path='/location-tracker' element={<LocationTracker />} />
+        </Routes>
+      </BrowserRouter>
+      <div
+        onClick={() => {
+          setFlag(!flag);
+        }}
+        className='IconMenu'
+      >
+        <img src='https://i.pinimg.com/originals/26/9d/d1/269dd16fa1f5ff51accd09e7e1602267.png' />
+      </div>
+      {flag ? (
+        <div className='optionsListDiv'>
+          <a className='optionRoute' href='/mobile-fit'>
+            Mobile Fit
+          </a>
+          <a className='optionRoute' href='/seat-arrangement'>
+            Seat Arrangement
+          </a>
+          <a className='optionRoute' href='/live-coordinates'>
+            Live Co-ordinates
+          </a>
+
+          <a className='optionRoute' href='/guide'>
+            Guide
+          </a>
+
+          <a className='optionRoute' href='/four-card-animation'>
+            Four Card Animation
+          </a>
+
+          <a className='optionRoute' href='/cameras'>
+            Cameras
+          </a>
+
+          <a className='optionRoute' href='/flex-order-cards'>
+            Flex Order Cards
+          </a>
+
+          <a className='optionRoute' href='/dashboard'>
+            Dashboard
+          </a>
+
+          <a className='optionRoute' href='/bubbles'>
+            Bubbles
+          </a>
+
+          <a className='optionRoute' href='/cloudinary-test'>
+            Cloudinary Test
+          </a>
+
+          <a className='optionRoute' href='/'>
+            Itinerary Component
+          </a>
+          <a className='optionRoute' href='/location-tracker'>
+            Location Tracker
+          </a>
+          <a className='optionRoute' href='/bubble-d3'>
+            Bubble D3
+          </a>
+        </div>
+      ) : (
+        <></>
+      )}
     </div>
   );
 };

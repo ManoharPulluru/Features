@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import './Itenary.css';
 
 const Itenary = ({ item }) => {
-  // console.log(item, 'item');
+  console.log(item, 'item');
   const [isPopupClicked, setIsPopupClicked] = useState(null);
   const [isSwipped, setIsSwipped] = useState(null);
   const cardRef = useRef(null);

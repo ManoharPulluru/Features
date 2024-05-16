@@ -29,3 +29,63 @@
   bottom: 0;
   transform: translate(-50%, 50%);
 }
+
+.IconMenu {
+  height: 40px;
+  aspect-ratio: 1;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  border-radius: 8px;
+  display: flex;
+  border: 1px solid white;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+  background-color: navy;
+}
+
+.IconMenu:hover {
+  box-shadow: 0 0 10px 0px white;
+}
+
+.IconMenu img {
+  height: 20px;
+}
+
+.optionRoute {
+  width: 100%;
+  height: fit-content;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+}
+
+.optionRoute:hover {
+  scale: 1.1;
+  transition: all 0.3s ease-in-out;
+}
+
+.optionsListDiv {
+  height: 90%;
+  width: 300px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: #553f31;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: scroll;
+  z-index: 10;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.optionsListDiv::-webkit-scrollbar {
+  display: none;
+}
