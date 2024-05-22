@@ -16,6 +16,13 @@ import CloudinaryTest from './CloudinaryTest/CloudinaryTest';
 import ItenaryComponent from './ItenaryComponent/ItenaryComponent';
 import BubbleD3 from './bubbleD3/BubbleD3';
 import LocationTracker from './LocationFinder/LocationFinder';
+import InfiniteLoop from './InfinteLoop/InfiniteLoop';
+import SoundRecorder from './soundRecorder/SoundRecorder';
+import CauroselCards from './CauroselCards/CauroselCards';
+import BubbleChartReact from './bubble-chart/BubbleChartReact';
+import Test from './Test/Test';
+import TapToVibrate from './TapToVibrate/TapToVibrate';
+import MapBoxLocation from './MapBoxLocation/MapBoxLocation';
 
 const App = () => {
   const [flag, setFlag] = useState(false);
@@ -23,11 +30,15 @@ const App = () => {
     <div className='appMain'>
       <BrowserRouter>
         <Routes>
+          <Route path='/test' element={<Test />} />
+          <Route path='/' element={<MapBoxLocation />} />
+          <Route path='/sound-recorder' element={<SoundRecorder />} />
           <Route path='/mobile-fit' element={<MobileFit />} />
           <Route path='/seat-arrangement' element={<SeatArrangement />} />
           <Route path='/color-selector' element={<ColorSelector />} />
           <Route path='/live-coordinates' element={<LiveCoCordinates />} />
           <Route path='/guide' element={<Guide />} />
+
           {/* <Route path='/' element={<Itenary />} /> */}
           <Route path='/four-card-animation' element={<FourCardAnimation />} />
           <Route path='/cameras' element={<Cameras />} />
@@ -35,9 +46,13 @@ const App = () => {
           <Route path='/dashboard' element={<DashBoard />} />
           <Route path='/bubbles' element={<Bubbles />} />
           <Route path='/cloudinary-test' element={<CloudinaryTest />} />
-          <Route path='/' element={<ItenaryComponent />} />
+          <Route path='/itenrary' element={<ItenaryComponent />} />
           <Route path='/bubble-d3' element={<BubbleD3 />} />
           <Route path='/location-tracker' element={<LocationTracker />} />
+          <Route path='/infinite-loop' element={<InfiniteLoop />} />
+          <Route path='/caurosel-cards' element={<CauroselCards />} />
+          <Route path='/bubble-chart-react' element={<BubbleChartReact />} />
+          <Route path='/tap-to-vibrate' element={<TapToVibrate />} />
         </Routes>
       </BrowserRouter>
       <div
@@ -68,6 +83,10 @@ const App = () => {
             Four Card Animation
           </a>
 
+          <a href='/map-box-location' className='optionRoute'>
+            Map Box Location
+          </a>
+
           <a className='optionRoute' href='/cameras'>
             Cameras
           </a>
@@ -84,6 +103,10 @@ const App = () => {
             Bubbles
           </a>
 
+          <a className='optionRoute' href='/test'>
+            Test
+          </a>
+
           <a className='optionRoute' href='/cloudinary-test'>
             Cloudinary Test
           </a>
@@ -96,6 +119,21 @@ const App = () => {
           </a>
           <a className='optionRoute' href='/bubble-d3'>
             Bubble D3
+          </a>
+          <a className='optionRoute' href='/infinite-loop'>
+            Infinite Loop
+          </a>
+          <a className='optionRoute' href='/sound-recorder'>
+            Sound Recorder
+          </a>
+          <a className='optionRoute' href='/caurosel-cards'>
+            Caurosel Cards
+          </a>
+          <a className='optionRoute' href='/bubble-chart-react'>
+            Bubble Chart React
+          </a>
+          <a className='optionRoute' href='/tap-to-vibrate'>
+            Tap To Vibrate
           </a>
         </div>
       ) : (

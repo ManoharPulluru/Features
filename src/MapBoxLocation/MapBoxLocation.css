@@ -1,0 +1,13 @@
+.custom-marker {
+    width: 30px !important;
+    height: 30px !important;
+    background-color: #19bf00;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+  
+  .mapboxgl-marker-anchor-center > svg {
+    height: 50px;
+    width: 50px;
+  }

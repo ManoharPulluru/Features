@@ -1,0 +1,59 @@
+.InfiniteLoopMain {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cardIL {
+    height: 80%;
+    width: 80%;
+    border: 1px solid black;
+    position: relative;
+  }
+  
+  .strip {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .stripBox {
+    height: 100%;
+    min-width: 20%;
+    display: flex;
+    /* border-right: 3px solid green; */
+    font-family: sans-serif;
+    justify-content: space-between;
+    font-size: large;
+    background-color: rgba(128, 128, 128, 0.3);
+    animation: scroll 10s linear infinite; /* Adjust the duration as needed */
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .stripBoxBl {
+    height: 70%;
+    border-left: 1px solid black;
+  }
+  
+  .stripBoxSL {
+    height: 50%;
+    border-left: 1px solid black;
+  }
+  .stripBoxSL1 {
+    height: 50%;
+    border-left: 1px transparent black;
+  }

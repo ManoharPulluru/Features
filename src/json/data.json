@@ -1,0 +1,43 @@
+{
+  "gofema_friends": {
+    "item": {
+      "en": [
+        {
+          "name": "apple"
+        },
+        {
+          "name": "banana"
+        }
+      ],
+      "es": [
+        {
+          "name": "manzana"
+        },
+        {
+          "name": "platano"
+        }
+      ]
+    },
+    "en": [
+      {
+        "name": "apple"
+      },
+      {
+        "name": "banana"
+      },
+      {
+        "name": "xyz"
+      }
+    ]
+  },
+  "gofema_family": {
+    "en": [
+      {
+        "name": "orange"
+      },
+      {
+        "name": "pineapple"
+      }
+    ]
+  }
+}
