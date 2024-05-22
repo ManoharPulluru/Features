@@ -83,7 +83,7 @@ const App = () => {
             Four Card Animation
           </a>
 
-          <a href='/map-box-location' className='optionRoute'>
+          <a href='/' className='optionRoute'>
             Map Box Location
           </a>
 
@@ -94,7 +94,6 @@ const App = () => {
           <a className='optionRoute' href='/flex-order-cards'>
             Flex Order Cards
           </a>
-          
 
           <a className='optionRoute' href='/dashboard'>
             Dashboard
@@ -112,7 +111,7 @@ const App = () => {
             Cloudinary Test
           </a>
 
-          <a className='optionRoute' href='/'>
+          <a className='optionRoute' href='/itenrary'>
             Itinerary Component
           </a>
           <a className='optionRoute' href='/location-tracker'>
